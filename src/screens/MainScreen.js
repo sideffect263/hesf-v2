@@ -1,6 +1,6 @@
 import { 
   View,Button,  SafeAreaView,
-  ScrollView, Image, Platform, 
+  ScrollView, Image, Platform, useWindowDimensions, Dimensions,
   Text, StyleSheet, Pressable,
    Alert ,TouchableOpacity, Modal, Linking
    } from 'react-native'
@@ -482,6 +482,7 @@ const config_data =[//hold all the filters
 
 const MainScreen = (navigation, route, state) => {
 
+  const {height, width} = useWindowDimensions();
   const [filterdData, setFilterdData] = useState(data);
   const [toolFilters,  setToolFilters] = useState({});
   const [config, setConfig] = useState(config_data);
@@ -663,8 +664,11 @@ const styles = StyleSheet.create({
     resizeMode:'contain',
   },
   fliterData:{
-    flex:6,
-    backgroundColor:'#f6ae2d',
+    ...Dimensions.get('window').width>815?{backgroundColor:'black '}: {backgroundColor:'red'},
+
+   //...height>500?{backgroundColor:'black '}: {backgroundColor:'red'},
+   //...{height}>500?{backgroundColor:'black '}: {backgroundColor:'red'}, 
+   flex:6,
 
   },
   dataRange:{
@@ -731,9 +735,9 @@ const styles = StyleSheet.create({
         flexDirection:'row',
       },
       web:{
+        ...Dimensions.get('window').width>815?{flex:6}:{flex:2},
       flexDirection:'row',  
       alignItems:'stretch',
-      flex:6,
       width:'100%',
       height:'95%',
     },
@@ -753,10 +757,12 @@ const styles = StyleSheet.create({
 
       },
       web:{
+        
+        ...Dimensions.get('window').width>815?{flex:4}:{flex:6},
+
       backgroundColor:'#b9a44c',
       flexDirection:'row',  
       justifyContent:'center',
-      flex:5,
       width:'100%',
       height:'95%',
       },

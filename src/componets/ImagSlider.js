@@ -1,5 +1,5 @@
 import { View, Text,Image,StyleSheet ,TouchableOpacity, Modal, Pressable,SafeAreaView,
-  ScrollView,FlatList} from 'react-native'
+  ScrollView,FlatList,Dimensions} from 'react-native'
 import bamot_misparaim_memunaot from '../../assets/bamot_misparaim_memunaot-1.jpg'
 import React,{useState} from 'react'
 
@@ -159,13 +159,15 @@ const styles = StyleSheet.create({
     borderColor:'red',
   },
   itemImage:{
-    flex:1,
+    ...Dimensions.get('window').width>815?{flex:1}:{flex:3},
+
     height:200,
     backgroundColor:'white',
     justifyContent:'center',
   },
   itemText:{
-    flex:3,
+    ...Dimensions.get('window').width>815?{flex:3}:{flex:1},
+
   },
   itemImageView:{
     flex:2,

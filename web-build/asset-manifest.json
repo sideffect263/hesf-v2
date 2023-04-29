@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.c3a8601b.js",
-    "static/js/856.e8a9512e.js": "/static/js/856.e8a9512e.js",
+    "main.js": "/static/js/main.3be0cdee.js",
+    "static/js/573.580696d7.js": "/static/js/573.580696d7.js",
     "static/media/hand-engine.png": "/static/media/hand-engine.a6d44d8c6105f0af83f8.png",
     "static/media/bamot_misparaim_memunaot-1.jpg": "/static/media/bamot_misparaim_memunaot-1.070eb8a5c4472c061be7.jpg",
     "static/media/gas-engine.png": "/static/media/gas-engine.4dca7c6e039309695d23.png",
@@ -28,11 +28,11 @@
     "manifest.json": "/manifest.json",
     "favicon-16.png": "/favicon-16.png",
     "serve.json": "/serve.json",
-    "main.c3a8601b.js.map": "/static/js/main.c3a8601b.js.map",
-    "856.e8a9512e.js.map": "/static/js/856.e8a9512e.js.map"
+    "main.3be0cdee.js.map": "/static/js/main.3be0cdee.js.map",
+    "573.580696d7.js.map": "/static/js/573.580696d7.js.map"
   },
   "entrypoints": [
-    "static/js/856.e8a9512e.js",
-    "static/js/main.c3a8601b.js"
+    "static/js/573.580696d7.js",
+    "static/js/main.3be0cdee.js"
   ]
 }
